@@ -149,7 +149,7 @@ for epoch_num in range(num_epochs):
     aromse = 0
     valpcc = 0
     aropcc = 0
-    for i, data in enumerate(testDataloader):
+    for i, data in enumerate(valDataloader):
         st_time = time.time()
         val, labels,  F, Va, scene, audio  = data
         labels1 = labels[0]
